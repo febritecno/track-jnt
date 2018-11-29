@@ -6,11 +6,6 @@ var cs = require('cloudscraper');
 var csv = require('csv-writer').createObjectCsvWriter;
 var c = require('cheerio');
 var fs = require('fs');
-
-var file = fs.readFileSync('list.txt', "utf8").toString().split("\n");
-			
-file.map
-
 var q = require('wait-queue-es5');
 
 console.log('    ');
@@ -19,6 +14,9 @@ console.log('------------MAIN PROSES SCRAPE STARTING------------');
 console.log('    ');
 console.log('    ');
 
+
+// var file = fs.readFileSync('list.txt', "utf8").toString().split("\n");
+			
 // const prop_csv = new csv({
 // 	path: 'output.csv',
 // 	header: [{
@@ -48,9 +46,7 @@ var wq =new q();
 	// do loop while catch a error
 function loop() {
 	wq.shift(function (err, item) {
-		for(i in file){
-			var file = fs.readFileSync('list.txt', "utf8").toString().split("\n");
-			cs.post('https://jet.co.id/track', { billcode: file }, function (error, response, html) {
+		cs.post('https://jet.co.id/track', { billcode: 'JB0011245053' }, function (error, response, html) {
 				if (!error && response.statusCode == 200) {
 					var $ = c.load(html);
 					console.log();
@@ -66,7 +62,6 @@ function loop() {
 					console.log('  ');
 				}
 			});
-		}
 		
 		setTimeout(loop, 0);
     });

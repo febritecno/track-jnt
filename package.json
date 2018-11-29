@@ -20,7 +20,6 @@
     "execa": "^1.0.0",
     "file-system": "^2.2.2",
     "listr": "^0.14.3",
-    "node-async-loop": "^1.2.2",
     "wait-queue-es5": "^1.0.3"
   }
 }
