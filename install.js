@@ -2,6 +2,17 @@
 //https://www.npmjs.com/package/csv-writer https://www.npmjs.com/package/x-ray https://www.npmjs.com/package/node-request-queue https://www.npmjs.com/package/cloudscraper
 //https://www.npmjs.com/package/listr https://www.npmjs.com/package/execa cli management
 
+//cvsdata ntaps iso new data
+
+
+//https://medium.freecodecamp.org/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78
+
+
+// https://www.npmjs.com/package/wait-queue-es5
+
+//https://medium.freecodecamp.org/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78
+
+
 'use strict'
 
 
@@ -10,7 +21,7 @@ const listr = require('listr');
 
 console.log('    ');
 console.log('    ');
-console.log("PROSES INSTALL SCRAPER");
+console.log("RANDOM TRACK");
 console.log("-----------------");
 console.log('    ');
 
@@ -36,13 +47,13 @@ new listr([
 			})
   },
   {
-    title: 'Uji Coba Menjalankan Aplikasi',
+    title: 'Menjalankan Aplikasi',
     task: (task) => {
 		if (Error == true){
 		throw new Error('Aplikasi erorr');
 		task.skip();
 		}else{
-		execa('node', ['scraper.js']).stdout.pipe(process.stdout);
+		execa('node', ['index.js']).stdout.pipe(process.stdout);
 		}
 	}
   }

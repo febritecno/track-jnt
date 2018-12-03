@@ -1,14 +1,19 @@
 {
-  "name": "scraper",
+  "name": "jnt",
   "version": "1.0.0",
-  "description": "scraper j&t",
-  "main": "index.js",
+  "description": "cek resi jnt",
+  "main": "jnt.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "xray",
     "cloudscraper",
+    "cheerio",
+    "commander",
+    "csvdata",
+    "ora",
+    "chalk",
     "request"
   ],
   "author": "",
@@ -23,7 +28,6 @@
     "file-system": "^2.2.2",
     "listr": "^0.14.3",
     "ora": "^3.0.0",
-    "wait-queue-es5": "^1.0.3",
-    "write-csv": "^1.0.0"
+    "wait-queue-es5": "^1.0.3"
   }
 }

@@ -1,0 +1,24 @@
+untuk manual cek satu - satu resi perintahnya adalah
+
+jnt cek [nomer resi]
+
+contoh : 
+
+
+ke url nya project
+
+node jnt.js cek 888065293236
+
+
+
+untuk cek masal bisa gunakan.
+
+jnt list [nama text resi]
+
+contoh : 
+
+
+node jnt.js list list.txt
+
+
+coding by  : febrian
